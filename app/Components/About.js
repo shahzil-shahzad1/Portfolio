@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function AboutSection() {
   const specialties = [
     {
@@ -47,10 +49,12 @@ export default function AboutSection() {
                 key={index}
                 className="bg-[#0e111f] border border-[#2f3138] rounded-xl py-8 px-6 sm:px-10 flex flex-col items-center text-center hover:-translate-y-2 shadow-[0_4px_20px_#1a1a1ac4] hover:shadow-[0_10px_20px_#0e111f] hover:border-[#003844] transition-all duration-200"
               >
-                <img
+                <Image
                   src={item.image}
                   alt={item.title}
-                  className="mb-4 h-10 w-10 object-contain filter-aqua"
+                  width={40}
+                  height={40}
+                  className="mb-4 object-contain filter-aqua"
                 />
                 <h3 className="text-lg sm:text-xl font-bold text-gray-50 mb-2">
                   {item.title}
