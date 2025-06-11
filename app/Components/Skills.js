@@ -1,5 +1,7 @@
 'use client';
 
+import Image from "next/image";
+
 export default function SkillsSection() {
     const skills = [
         {
@@ -67,13 +69,14 @@ export default function SkillsSection() {
                     {skills.map((category, index) => (
                         <div
                             key={index}
-                            // 1a1a1ac4
                             className="bg-[#0e111f] border-[1px] border-[#2f3138] rounded-xl p-6 shadow-[0_4px_20px_#1a1a1ac4] hover:-translate-y-2 hover:shadow-[0_10px_20px_#0e111f] hover:border-[#003844] transition-all duration-200 text-left flex flex-col items-start"
                         >
-                            <img
+                            <Image
                                 src={category.icon}
                                 alt={category.title}
-                                className="h-8 w-8 mb-4 filter-aqua"
+                                width={32}
+                                height={32}
+                                className="mb-4 filter-aqua"
                             />
                             <h3 className="text-lg sm:text-xl font-bold text-gray-50 mb-2">{category.title}</h3>
                             <div className="flex flex-wrap gap-2">
