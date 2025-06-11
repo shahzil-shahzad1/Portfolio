@@ -1,4 +1,4 @@
-'use client';
+import Image from "next/Image";
 
 export default function HeroSection() {
   const socials = [
@@ -74,10 +74,11 @@ export default function HeroSection() {
               aria-label={social.name}
               className="w-10 h-10 sm:w-12 sm:h-12 hover:scale-110 transition-transform"
             >
-              <img
+              <Image
                 src={social.img}
                 alt={social.name}
-                className="w-full h-full object-contain invert"
+                width={40} // Adjust width and height as needed
+                height={40}
               />
             </a>
           ))}
