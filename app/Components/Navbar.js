@@ -50,7 +50,7 @@ export default function Navbar() {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="md:hidden px-6 pb-4 bg-black bg-opacity-95 space-y-2 w-[50vw] fixed r-0 bg-[#02091e]">
+                <div className="md:hidden px-6 pb-4 bg-opacity-95 space-y-2 w-[50vw] fixed right-0 bg-[#02091e]">
                     {navItems.map((item) => (
                         <Link
                             key={item.name}
