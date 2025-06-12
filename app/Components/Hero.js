@@ -77,8 +77,9 @@ export default function HeroSection() {
               <Image
                 src={social.img}
                 alt={social.name}
-                width={40} // Adjust width and height as needed
-                height={40}
+                width={42} // Adjust width and height as needed
+                height={42}
+                className="invert"
               />
             </a>
           ))}
