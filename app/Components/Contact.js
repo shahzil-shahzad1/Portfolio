@@ -21,20 +21,73 @@ export default function ContactSection() {
                         </p>
 
                         <div className="space-y-4 text-sm">
-                            {/* ... */}
+                            <div className="bg-[#0e111f] p-4 rounded-lg border border-[#2f3138] transition-all duration-200 hover:scale-[99%] hover:ml-2">
+                                <strong className="block mb-1">📧 Email</strong>
+                                <a href="mailto:shehzilshahzad51@gmail.com" className="ml-6 text-[#00BFFF] hover:text-[#00afe9]">shehzilshahzad51@gmail.com</a>
+                            </div>
+                            <div className="bg-[#0e111f] p-4 rounded-lg border border-[#2f3138] transition-all duration-200 hover:scale-[99%] hover:ml-2">
+                                <strong className="block mb-1">🔗 LinkedIn</strong>
+                                <a href="https://www.linkedin.com/in/shehzil-shahzad-563b8031a/" className="ml-6 text-[#00BFFF] hover:text-[#00afe9]">Muhammad Shahzil Shahzad</a>
+                            </div>
+                            <div className="bg-[#0e111f] p-4 rounded-lg border border-[#2f3138] transition-all duration-200 hover:scale-[99%] hover:ml-2">
+                                <strong className="block mb-1">🐙 GitHub</strong>
+                                <a href="https://github.com/shahzil-shahzad1" className="ml-6 text-[#00BFFF] hover:text-[#00afe9]">shahzil-shahzad</a>
+                            </div>
+                            <div className="bg-[#0e111f] p-4 rounded-lg border border-[#2f3138] transition-all duration-200 hover:scale-[99%] hover:ml-2">
+                                <strong className="block mb-1">📍 Location</strong>
+                                <span className="ml-3 text-[#00BFFF]">Available for Remote Work</span>
+                            </div>
+                            <div className="bg-[#202020] p-4 rounded-lg border border-gray-700 text-green-400 font-medium">
+                                ● Available for new opportunities
+                            </div>
                         </div>
                     </div>
 
                     {/* Right: Contact Form */}
                     <div className="bg-[#0e111f] p-8 rounded-lg border border-[#2f3138]">
                         <form className="space-y-6 text-sm">
-                            {/* labels unchanged */}
                             <div>
                                 <label htmlFor="name" className="block mb-3 text-lg text-gray-300">Name</label>
-                                <input id="name" type="text" /* ... */ />
+                                <input
+                                    id="name"
+                                    type="text"
+                                    className="w-full bg-gradient-to-b from-[#02091d] via-[#02081a] to-[#020718] text-white p-3 rounded-md border border-transparent focus:outline-none focus:ring-2 focus:ring-[#00b0f9] focus:ring-offset-0 placeholder-gray-200"
+                                    placeholder="Name"
+                                />
                             </div>
-                            {/* rest of form */}
-                            <button type="submit">➤ SEND MESSAGE</button>
+                            <div>
+                                <label htmlFor="email" className="block mb-3 text-lg text-gray-100">Email</label>
+                                <input
+                                    id="email"
+                                    type="email"
+                                    className="w-full bg-gradient-to-b from-[#02091d] via-[#02081a] to-[#020718] text-white p-3 rounded-md border border-transparent focus:outline-none focus:ring-2 focus:ring-[#00b0f9] focus:ring-offset-0 placeholder-gray-200"
+                                    placeholder="Email"
+                                />
+                            </div>
+                            <div>
+                                <label htmlFor="subject" className="block mb-3 text-lg text-gray-100">Subject</label>
+                                <input
+                                    id="subject"
+                                    type="text"
+                                    className="w-full bg-gradient-to-b from-[#02091d] via-[#02081a] to-[#020718] text-white p-3 rounded-md border border-transparent focus:outline-none focus:ring-2 focus:ring-[#00b0f9] focus:ring-offset-0 placeholder-gray-200"
+                                    placeholder="Subject"
+                                />
+                            </div>
+                            <div>
+                                <label htmlFor="message" className="block mb-3 text-lg text-gray-100">Message</label>
+                                <textarea
+                                    id="message"
+                                    rows="4"
+                                    className="w-full bg-gradient-to-b from-[#02091d] via-[#02081a] to-[#020718] text-white p-3 rounded-md border border-transparent focus:outline-none focus:ring-2 focus:ring-[#00b0f9] focus:ring-offset-0 placeholder-gray-200"
+                                    placeholder="Message"
+                                ></textarea>
+                            </div>
+                            <button
+                                type="submit"
+                                className="bg-gradient-to-r from-[#00BFFF] to-[#00b0f9] hover:from-[#01b5f1] hover:to-[#00a3e9] text-white font-medium px-6 py-2 rounded shadow-lg transition cursor-pointer"
+                            >
+                                ➤ SEND MESSAGE
+                            </button>
                         </form>
                     </div>
                 </div>
