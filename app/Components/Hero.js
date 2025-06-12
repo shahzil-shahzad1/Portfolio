@@ -29,7 +29,7 @@ export default function HeroSection() {
 
         {/* Headings */}
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold mb-4 leading-snug">
-          Hi, I'm <span className="text-[#0ad8fc]">Muhammad Shahzil Shahzad</span>
+          Hi, I&apos;m <span className="text-[#0ad8fc]">Muhammad Shahzil Shahzad</span>
         </h1>
         <h2 className="text-xl sm:text-2xl font-semibold mb-6">
           Full-Stack Developer
