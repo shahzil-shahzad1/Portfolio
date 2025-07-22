@@ -30,7 +30,7 @@ const projects = [
   {
     title: 'Waxwing',
     domain: 'Web Development',
-    link: "https://waxwing.vercel.app",
+    link: "https://waxwing0.vercel.app",
     description: 'Built a professional, responsive company website for practice using Next.js with optimized performance, SEO, and modular components.',
     technologies: ['Next.js', 'React', 'Tailwind CSS', 'SEO Optimization', 'Web Performance']
   },
